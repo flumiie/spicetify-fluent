@@ -1790,6 +1790,10 @@ option {
 }
 
 
+/* Player now playing info */
+div[role="contentinfo"] {
+  margin-left: 4.5em
+}
 /* Player buttons */
 button.vnCew8qzJq3cVGlYFXRI,
 button.KVKoQ3u4JpKTvSSFtd6J,
@@ -1800,9 +1804,11 @@ button.Vz6yjzttS0YlLcwrkoUR {
 }
 /* play button */
 button.vnCew8qzJq3cVGlYFXRI[aria-label="Play"] {
+  --button-size: 38px !important;
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_24_filled.svg');
 }
 button.vnCew8qzJq3cVGlYFXRI[aria-label="Pause"] {
+  --button-size: 38px !important;
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_pause_16_filled.svg');
 }
 /* shuffle button */

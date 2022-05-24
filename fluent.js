@@ -168,4 +168,20 @@
       playlistElement.style.backgroundImage = url(cover);
     }
   );
+
+  // Player now playing
+  waitForElement(
+    [
+      ".qWcH8e2laY9sYOuCsOAx", // Player now playing cover
+      ".Foyk_HJx16yh22JYmQ56"  // Big album cover
+    ],
+    () => {
+      const npCover = document
+        .querySelector('button.qWcH8e2laY9sYOuCsOAx')
+      const albumCover = document.querySelector('.Foyk_HJx16yh22JYmQ56');
+      if (npCover.getAttribute('aria-label') === 'Expand') {
+        albumCover.style.display = "none";
+      }
+    }
+  );
 })();
