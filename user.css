@@ -1753,17 +1753,57 @@ option {
   height: 22px !important;
 }
 
-/* Shuffle disabled */
-.main-shuffleButton-button {
+/* Player buttons */
+button.vnCew8qzJq3cVGlYFXRI,
+button.KVKoQ3u4JpKTvSSFtd6J,
+button.fn72ari9aEmKo4JcwteT,
+button.mnipjT4SLDMgwiDCEnRC,
+button.Vz6yjzttS0YlLcwrkoUR {
+  background-color: var(--spice-text) !important;
+}
+/* play button */
+.main-playButton-button[aria-label="Play"],
+.main-playButton-PlayButton[aria-label="Play"],
+.main-playPauseButton-button[aria-label="Play"],
+.main-trackList-rowPlayPauseButton[aria-label="Play"] {
+  --button-size: 38px !important;
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_16_filled.svg') !important;
+}
+.main-playButton-button[aria-label="Pause"],
+.main-playButton-PlayButton[aria-label="Pause"],
+.main-playPauseButton-button[aria-label="Pause"],
+.main-trackList-rowPlayPauseButton[aria-label="Pause"] {
+  --button-size: 38px !important;
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_pause_16_filled.svg');
+}
+/* shuffle button */
+button.KVKoQ3u4JpKTvSSFtd6J[aria-label="Enable shuffle"] {
   -webkit-mask-image: url('./phosphor-icons/shuffle.svg');
   background-color: var(--spice-subtext) !important;
-  height: 22px !important;
+  height: 26px !important;
 }
-/* Shuffle enabled */
-.main-shuffleButton-button[aria-checked="true"] {
+button.KVKoQ3u4JpKTvSSFtd6J[aria-label="Disable shuffle"] {
   -webkit-mask-image: url('./phosphor-icons/shuffle-bold.svg');
   background-color: var(--spice-text) !important;
-  height: 22px !important;
+  height: 26px !important;
+}
+/* previous button */
+button.fn72ari9aEmKo4JcwteT {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_previous_24_filled.svg');
+}
+/* next button */
+button.mnipjT4SLDMgwiDCEnRC {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_next_24_filled.svg');
+}
+/* repeat button */
+button.Vz6yjzttS0YlLcwrkoUR[aria-label="Enable repeat"] {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg');
+}
+button.Vz6yjzttS0YlLcwrkoUR[aria-label="Enable repeat one"] {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg');
+}
+button.Vz6yjzttS0YlLcwrkoUR[aria-label="Disable repeat"] {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg');
 }
 
 /*Like button*/
@@ -1790,45 +1830,9 @@ option {
 }
 
 
-/* Player buttons */
-button.vnCew8qzJq3cVGlYFXRI,
-button.KVKoQ3u4JpKTvSSFtd6J,
-button.fn72ari9aEmKo4JcwteT,
-button.mnipjT4SLDMgwiDCEnRC,
-button.Vz6yjzttS0YlLcwrkoUR {
-  background-color: var(--spice-text) !important;
-}
-/* play button */
-button.vnCew8qzJq3cVGlYFXRI[aria-label="Play"] {
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_24_filled.svg');
-}
-button.vnCew8qzJq3cVGlYFXRI[aria-label="Pause"] {
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_pause_16_filled.svg');
-}
-/* shuffle button */
-button.KVKoQ3u4JpKTvSSFtd6J[aria-label="Enable shuffle"] {
-  -webkit-mask-image: url('./fluentui-system-icons/shuffle.svg');
-}
-button.KVKoQ3u4JpKTvSSFtd6J[aria-label="Disable shuffle"] {
-  -webkit-mask-image: url('./fluentui-system-icons/shuffle-enabled.svg');
-}
-/* previous button */
-button.fn72ari9aEmKo4JcwteT {
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_previous_24_filled.svg');
-}
-/* next button */
-button.mnipjT4SLDMgwiDCEnRC {
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_next_24_filled.svg');
-}
-/* repeat button */
-button.Vz6yjzttS0YlLcwrkoUR[aria-label="Enable repeat"] {
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg');
-}
-button.Vz6yjzttS0YlLcwrkoUR[aria-label="Enable repeat one"] {
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg');
-}
-button.Vz6yjzttS0YlLcwrkoUR[aria-label="Disable repeat"] {
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg');
+/* Player now playing info */
+div[role="contentinfo"] {
+  margin-left: 4.5em
 }
 
 
