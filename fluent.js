@@ -149,6 +149,7 @@
   );
 
   // Playlist translateY recalculation
+  // Still trying to figure out this as there's a big change from Spotify, help needed
   waitForElement([".JUa6JJNj7R_Y3i4P8YUX"], () => {
     const element = document.querySelector(".JUa6JJNj7R_Y3i4P8YUX > div:nth-child(2)");
     const style = window.getComputedStyle(element);
